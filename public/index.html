@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f5ef">
+  <title>Pharmaceutical Engineering &amp; Technology | Lab Works</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="Pharmaceutical Engineering and Technology lab works"><span class="brand-mark">P<span>.</span></span><span>Pharmaceutical Engineering &amp; Technology</span></a>
+    <button class="admin-open button secondary">Admin</button>
+  </header>
+  <main id="app" class="page-shell">
+    <section class="hero">
+      <div class="hero-copy"><p class="eyebrow">IIT (BHU) VARANASI · RESEARCH DIRECTORY</p><h1>Pharmaceutical Engineering <em>&amp; Technology</em></h1><p class="intro">A clear directory of faculty labs, researchers, and their compound collections.</p><div id="directory-stats" class="directory-stats" aria-live="polite"></div></div>
+      <div class="search-wrap"><label class="search-label" for="search">Find a researcher or compound</label><div class="searchbox"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Name, collection, or compound code" autocomplete="off"><kbd>↵</kbd></div><div id="search-results" class="search-results" hidden></div></div>
+    </section>
+    <section class="content-section directory-section"><div class="section-head"><div><p class="eyebrow">PEOPLE &amp; RESEARCH</p><h2>Faculty laboratories</h2><p class="section-description">Choose a lab to browse its researchers and their compound work.</p></div><span id="professor-count" class="section-count"></span></div><div id="professors" class="professor-grid"></div></section>
+  </main>
+  <div id="view" class="page-shell" hidden></div>
+  <dialog id="admin-dialog" class="dialog admin-dialog"><form method="dialog" class="dialog-head"><div><h2>Lab administration</h2></div><button class="icon-button" value="close" aria-label="Close">×</button></form><div class="dialog-body"><label>Admin key<input id="admin-key" type="password" autocomplete="off"></label><button id="admin-load" class="button">Open</button><div id="admin-content"></div></div></dialog>
+  <dialog id="form-dialog" class="dialog wide-dialog"><form method="dialog" class="dialog-head"><div><p class="eyebrow">LAB RECORD</p><h2 id="form-title">Add compound</h2></div><button class="icon-button" value="close" aria-label="Close">×</button></form><div class="dialog-body" id="form-content"></div></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
